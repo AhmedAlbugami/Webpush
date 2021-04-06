@@ -1,0 +1,22 @@
+var push = require('web-push');
+
+
+let vapidKeys = {
+    publickey: 'Fmk7xqNfQNWBzyr1ZYF5LJ2EP9GtetXpvzKKAL-EsU6aFmk7xqNfQNWBzyr1ZYF5LJ2EP9GtetXpvzyahzTnroK',
+    privatekey: 'EsU6aFmk7xqNfQNWBzyr1ZYF5LJ2EP9GtetXpvzyahzTnroK'
+};
+
+
+push.setVapidDetails('mailto:asalbug@pointpark.edu', vapidKeys.publickey, vapidKeys.privatekey);
+
+  
+  let sub = {
+    endpoint:
+      '"https://fcm.googleapis.com/fcm/send/e4f7haybxow:APA91bGFBkV2oBBuu4t1Xnz-fDXHERza2wcIz8M_j0wxJyNGyDiU6JO3T09ABxJEv6q6KvVCP7YPy8Uy65uO-lX0-8dsHpo7gfYUQWv7LgjtnYD9wDfcyAaFJUBsA1VJIjq_BXJFEe_Y',
+    expirationTime: null,
+    keys: {
+      p256dh:
+        'Fmk7xqNfQNWBzyr1ZYF5LJ2EP9GtetXpvzKKAL-EsU6aFmk7xqNfQNWBzyr1ZYF5LJ2EP9GtetXpvzyahzTnroK',
+      auth: 'DPwziQAufRznlCRzuzFy-w'
+    }
+  };
